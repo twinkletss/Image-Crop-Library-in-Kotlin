@@ -10,6 +10,16 @@ dependencyResolutionManagement {
 		}
 	}
 
+if you are using build.gradle.kts file you need to add setting.gradle.kts file
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io")  } //add this line in your project.
+    }
+}
 
 Add dependency in your build.gradle(app level)
 
