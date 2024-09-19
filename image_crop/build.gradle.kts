@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("org.jetbrains.kotlin.plugin.parcelize")
+
+    // publish library
+    id ("maven-publish")
 }
 kotlin {
     jvmToolchain {
@@ -41,6 +44,18 @@ android {
         viewBinding = true
     }
 }
+
+// publish library------
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+//--------------
 
 dependencies {
 
