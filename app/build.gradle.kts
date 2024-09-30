@@ -51,5 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.timber)
-    implementation(project(":image_crop"))
+//    implementation(project(":image_crop"))
+    implementation ("com.github.twinkletss:Image-Crop-Library-in-Kotlin:1.0.1")
 }

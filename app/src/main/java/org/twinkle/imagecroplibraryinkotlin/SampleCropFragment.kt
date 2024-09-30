@@ -142,6 +142,6 @@ internal class SampleCropFragment : Fragment() {
     const val FILE_NAMING_PREFIX = "JPEG_"
     const val FILE_NAMING_SUFFIX = "_"
     const val FILE_FORMAT = ".jpg"
-    const val AUTHORITY_SUFFIX = ".cropper.fileprovider"
+    const val AUTHORITY_SUFFIX = ".image_crop.fileprovider"
   }
 }
